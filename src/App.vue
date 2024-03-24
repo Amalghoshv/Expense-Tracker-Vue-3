@@ -25,7 +25,7 @@ onMounted(()=>{
     transactions.value = savedTransactions     
   }
 })
-//total
+//totals
 const total = computed(()=>{
   return transactions.value.reduce((acc,transaction)=>{
       return acc+transaction.amount
